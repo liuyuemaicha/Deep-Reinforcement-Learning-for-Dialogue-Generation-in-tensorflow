@@ -1,5 +1,13 @@
-TensorFlow°æ±¾£º 0.12.0
+#Deep-Reinforcement-Learning-for-Dialogue-Generation-in-tensorflow
 
-Python°æ±¾£º 2.7
+é…ç½®ï¼š
 
-±¾ÏîÄ¿ÊµÏÖÁËÂÛÎÄDeep Reinforcement Learning for Dialogue Generation£¬ÂÛÎÄµØÖ·£ºhttps://arxiv.org/abs/1606.01541
+TensorFlowç‰ˆæœ¬ï¼š 0.12.0
+
+Pythonç‰ˆæœ¬ï¼š 2.7
+
+æœ¬é¡¹ç›®å®ç°äº†è®ºæ–‡Deep Reinforcement Learning for Dialogue Generationï¼Œè®ºæ–‡åœ°å€ï¼šhttps://arxiv.org/abs/1606.01541
+
+è¿è¡Œï¼š
+
+Python seq2seq_train.py
