@@ -636,11 +636,9 @@ def embedding_attention_seq2seq(encoder_inputs,
       scope or "embedding_attention_seq2seq", dtype=dtype) as scope:
     dtype = scope.dtype
     # Encoder.
-    encoder_cell = rnn_cell.EmbeddingWrapper(
-        cell, embedding_classes=num_encoder_symbols,
-        embedding_size=embedding_size)
-    encoder_outputs, encoder_state = rnn.rnn(
-        encoder_cell, encoder_inputs, dtype=dtype)
+    encoder_cell = rnn_cell.EmbeddingWrapper(cell, embedding_classes=num_encoder_symbols,
+                                             embedding_size=embedding_size)
+    encoder_outputs, encoder_state = rnn.rnn(encoder_cell, encoder_inputs, dtype=dtype)
 
     # First calculate a concatenation of encoder outputs to put attention on.
     top_states = [array_ops.reshape(e, [-1, 1, cell.output_size])
@@ -672,8 +670,7 @@ def embedding_attention_seq2seq(encoder_inputs,
     # If feed_previous is a Tensor, we construct 2 graphs and use cond.
     def decoder(feed_previous_bool):
       reuse = None if feed_previous_bool else True
-      with variable_scope.variable_scope(
-          variable_scope.get_variable_scope(), reuse=reuse) as scope:
+      with variable_scope.variable_scope(variable_scope.get_variable_scope(), reuse=reuse) as scope:
         outputs, state = embedding_attention_decoder(
             decoder_inputs,
             encoder_state,
