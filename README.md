@@ -11,7 +11,7 @@ Python： 2.7
 
 
 ## Introduction
-本项目实现了论文Deep Reinforcement Learning for Dialogue Generation，论文地址：https://arxiv.org/abs/1606.01541
+本项目实现论文Deep Reinforcement Learning for Dialogue Generation，论文地址：https://arxiv.org/abs/1606.01541
 
 
 **the start file** ： 
