@@ -1,6 +1,6 @@
 # Deep-Reinforcement-Learning-for-Dialogue-Generation-in-tensorflow
 
-# NOTICE: The program have finished about 80%. I am interning in Hitachi now, and studying on the zero-shot learning because of the requriment of my leader.So I have no time to do that. I will do my best to complete the program when I finish the project of zero-shot learning.
+## NOTICE: The program have finished about 80%. I am interning in Hitachi now, and I am studying on the zero-shot learning recently,  I will do my best to complete the program when I finish the project of zero-shot learning.
 ## config：
 
 
